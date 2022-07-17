@@ -9,12 +9,15 @@ jobs:
   mirror:
     name: Mirror Repo
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-          with:
-            fetch-depth: 0
-        - uses: yesolutions/mirror-action@master
-          with:
-            REMOTE: 'https://github.com/thinkst/opencanary.git'
-            DEBUG: "true"
-            PUSH_ALL_REFS: "false"
+    steps:
+      -
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      -
+        uses: yesolutions/mirror-action@master
+        with:
+          REMOTE: 'https://github.com/thinkst/opencanary.git'
+          DEBUG: "true"
+          PUSH_ALL_REFS: "false"
