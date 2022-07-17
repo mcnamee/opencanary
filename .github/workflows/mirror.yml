@@ -18,7 +18,5 @@ jobs:
       -
         uses: yesolutions/mirror-action@master
         with:
-          REMOTE: 'https://github.com/thinkst/opencanary.git'
-          GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
-          GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
+          REMOTE: 'git@github.com:thinkst/opencanary.git'
           DEBUG: "true"
