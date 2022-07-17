@@ -1,13 +1,13 @@
-name: Mirror OpenCanary & Push to Docker Hub
+name: Clone, Build & Push OpenCanary to Docker Hub
 
 on:
   schedule:
-    - cron:  '0 0 * * MON'
+    - cron:  '0 0 1,15 * *'
   workflow_dispatch:
 
 jobs:
-  mirror_to_docker_hub:
-    name: Mirror Repo
+  clone-build-push:
+    name: Clone Repo
     runs-on: ubuntu-latest
     steps:
       -
@@ -23,7 +23,6 @@ jobs:
         run: |
           git clone https://github.com/thinkst/opencanary.git .
           cp Dockerfile.latest Dockerfile
-          ls -lah
           pwd
 
       -
