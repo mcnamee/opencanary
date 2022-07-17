@@ -21,9 +21,7 @@ jobs:
       -
         name: Clone Open Canary
         run: |
-          git clone https://github.com/thinkst/opencanary.git
-          ls -lah
-          pwd
+          git clone https://github.com/thinkst/opencanary.git .
 
       -
         name: Log in to Docker Hub
