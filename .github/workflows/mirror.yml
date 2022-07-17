@@ -22,4 +22,3 @@ jobs:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
           DEBUG: "true"
-          PUSH_ALL_REFS: "false"
