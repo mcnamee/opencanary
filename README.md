@@ -1,6 +1,6 @@
 # Clone, Build & Push thinkst/opencanary to Docker Hub
 
-This is a simple Github Action to:
+A Github Action to:
 
 - Clone [https://github.com/thinkst/opencanary](thinkst/opencanary)
 - Build the Docker images (primarily for my Raspberry Pi 4 - arm/v7)
