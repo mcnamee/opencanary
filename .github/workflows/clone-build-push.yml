@@ -22,7 +22,7 @@ jobs:
         name: Clone Open Canary
         run: |
           git clone https://github.com/thinkst/opencanary.git .
-          cp Dockerfile.stable Dockerfile
+          cp Dockerfile.latest Dockerfile
           pwd
 
       -
